@@ -5,7 +5,7 @@
 }
 
 header{
-    padding:24px;
+    padding:40px;
     text-align: center;
     background-color: black;
     color: beige;
@@ -13,10 +13,6 @@ header{
 
 }
 
-.Portfolio-image{
-    align-items: first baseline;
-    align-items: center;
-}
 
 footer {
     background-color: black;
@@ -28,16 +24,27 @@ footer {
     width: 100%; /* Ensures it spans the full width of the page */
 }
 
-portfolio-content{
-    text-align: end;
-}
+
 .image{
     align-items: center;
     width: 100px;
     height: 100px;
+    border-radius: 50%;
 }
 
 
 main{
     padding:2rem;
+}
+
+.Portfolio-image {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically (if necessary) */
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
