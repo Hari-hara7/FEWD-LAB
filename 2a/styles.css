@@ -1,0 +1,107 @@
+* {
+   
+    padding: 0%;
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    color: azure;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 24px;
+    padding: 0 24px;
+}
+header-content{
+    background-color: black;
+    color: rgb(0, 255, 255);
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+
+}
+
+.Container {
+
+    width:100%;
+
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    border-radius: 20px;
+    border-color: black;
+    text-align:center;
+    box-shadow: 0cqh;
+ 
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.btn{
+
+    background-color: blue;
+    color:aliceblue;
+    border-radius: 5px;
+    padding:10px;
+    text-decoration: none;
+
+}
+
+
+form-container{
+    align-items: center;
+    max-width: 300px;
+    padding: 24px;
+    margin-bottom: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom:5px 10px;
+    padding: 10px 10px;
+    max-width: 90pxpx;
+    text-align: center;
+    color: black;
+
+}
+
+input{
+   width: 250px;
+    padding:8px;
+    margin-bottom:10px;
+    max-width: 90pxpx;
+    border:1px solid rgb(0, 0, 0);
+    border-radius:5px;
+    align-items: center;
+    
+    
+}
+btn{
+    display:inline-block;
+    padding:8px 20px;
+    background-color:black;
+    color: beige;
+    border:none;
+    border-radius: 3px;
+    cursor:pointer;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    padding: 24px;
+    text-align: center;
+  }
+  
