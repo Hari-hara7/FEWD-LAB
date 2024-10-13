@@ -1,0 +1,43 @@
+*{
+    padding:0%;
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    padding:24px;
+    text-align: center;
+    background-color: black;
+    color: beige;
+    font-size: large;
+
+}
+
+.Portfolio-image{
+    align-items: first baseline;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    color: azure;
+    text-align: center;
+    padding: 24px;
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Ensures it spans the full width of the page */
+}
+
+portfolio-content{
+    text-align: end;
+}
+.image{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+main{
+    padding:2rem;
+}

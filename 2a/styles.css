@@ -16,14 +16,7 @@ header{
     margin: 0%;
     padding: 15px 24px;
 }
-header-content{
-    background-color: black;
-    color: rgb(0, 255, 255);
-    text-align: center;
-    align-items: center;
-    font-size: 24px;
 
-}
 
 .Container {
 
@@ -60,7 +53,7 @@ form-container{
     align-items: center;
     max-width: 300px;
     padding: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 
 }
 
