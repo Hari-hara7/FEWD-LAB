@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Management</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Records Management System</h1>
+    
+    <div>
+        <h3>Add Student</h3>
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="id" placeholder="Student ID">
+        <button onclick="addStudent()">Add Student</button>
+        <p id="message"></p>
+    </div>
+
+    <h3>All Students</h3>
+    <ul id="studentList"></ul>
+
+    <script>
+        // Array to store student records
+        let students = [];
+
+        // Function to add a student
+        function addStudent() {
+            const name = document.getElementById('name').value.trim();
+            const age = document.getElementById('age').value.trim();
+            const id = document.getElementById('id').value.trim();
+            const message = document.getElementById('message');
+
+            // Clear the previous message
+            message.textContent = '';
+            message.classList.remove('error');
+
+            // Input validation
+            if (!name || !age || !id) {
+                message.textContent = 'All fields are required!';
+                message.classList.add('error');
+                return;
+            }
+
+            if (isNaN(age) || age <= 0) {
+                message.textContent = 'Invalid age. Please enter a valid positive number.';
+                message.classList.add('error');
+                return;
+            }
+
+            if (students.some(student => student.id === id)) {
+                message.textContent = `A student with ID ${id} already exists!`;
+                message.classList.add('error');
+                return;
+            }
+
+            // Add the student object to the array
+            const student = {
+                name,
+                age: Number(age),
+                id
+            };
+            students.push(student);
+
+            // Update the student list
+            updateStudentList();
+
+            // Clear input fields
+            document.getElementById('name').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('id').value = '';
+
+            // Success message
+            message.textContent = 'Student added successfully!';
+        }
+
+        // Function to update the student list display
+        function updateStudentList() {
+            const studentList = document.getElementById('studentList');
+            studentList.innerHTML = ''; // Clear the current list
+
+            students.forEach(student => {
+                const li = document.createElement('li');
+                li.textContent = `ID: ${student.id}, Name: ${student.name}, Age: ${student.age}`;
+                studentList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
