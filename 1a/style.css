@@ -6,33 +6,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.nav-content {
-    display: flex;
-    justify-content: center; /* Center the nav content */
-    margin: 0 0 20px;
-    padding: 24px;
-}
-
-.nav-content ul {
-    display: flex;
-    align-items: center;
-    margin: 0; /* Remove side margins */
-}
-
-.nav-content ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 24px;
-    margin: 0 20px; /* Adjust margin for spacing */
-    background-color: rgb(89, 88, 88);
-    text-decoration: none;
-}
-
-.nav-content ul li:hover {
-    background-color: aqua;
-    color: #000000;
-}
 
 .menu {
     display: flex;
